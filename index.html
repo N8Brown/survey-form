@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Survey</title>
+		<link rel="stylesheet" href="style.css">
 	</head>
 
 	<body>
@@ -14,25 +15,27 @@
 		</section>
 
 		<form id="survey-form">
-			<label id="name-label" for="name">Name: </label>
+			
+			<label class="labels" id="name-label" for="name">Name: </label>
 			<input id="name" type="text" name="name" required placeholder="Enter Your Name">
-
-			<label id="number-label" for="age">Age: </label>
+				
+			<label class="labels" id="number-label" for="age">Age: </label>
 			<input id="number" type="number" name="age" min="1" max="150" required placeholder="Enter Your Age">
-
-			<label id="email-label" for="email">Email: </label>
+			
+			<label class="labels" id="email-label" for="email">Email: </label>
 			<input id="email" type="email" name="email" required placeholder="Enter Your Email Address">
 
-			<label>What is your Web Developer experience level?</label>
-			<select>
-				<option>What is Web Development?</option>
-				<option>Beginner</option>
-				<option></option>
-
+			<label class="labels" id="dropdown-label" for="dropdown">What is your Web Developer experience level?</label>
+			<select id="dropdown" name="dropdown">
+                <option></option>
+				<option>"What is Web Development?"</option>
+				<option>"I've Dipped My Toe In The Water."</option>
+				<option>"I Think I Know What I'm Doing..."</option>
+                <option>"I'm A Web Development Guru!"</option>
 			</select>
 
-		    <label id="textarea-label" for="textarea"> Additional Comments: </label>
-     		<textarea id="textarea" type="text" name="textarea"></textarea>
+		    <label class="labels" id="textarea-label" for="textarea"> Additional Comments: </label>
+     		<textarea id="textarea" type="text" name="textarea" placeholder="Add your thoughts here..."></textarea>
 			
 			<button id="submit" type="submit">Submit</button>
 		</form>
