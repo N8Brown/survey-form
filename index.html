@@ -15,41 +15,114 @@
 		</section>
 
 		<form id="survey-form">
-			
-			<label class="labels" id="name-label" for="name">Name: </label>
-			<input class="required-input" id="name" type="text" name="name" required placeholder="Enter Your Name">
+			<fieldset id="about-you">
+				<legend>About You</legend>
+				<div class="required-row">
+					<label class="required-labels" id="name-label" for="name">Name: </label>
+					<input class="required-input" id="name" type="text" name="name" required placeholder="Enter Your Name">
+				</div>
 				
-			<label class="labels" id="number-label" for="age">Age: </label>
-			<input class="required-input" id="number" type="number" name="age" min="1" max="150" required placeholder="Enter Your Age">
-			
-			<label class="labels" id="email-label" for="email">Email: </label>
-			<input class="required-input" id="email" type="email" name="email" required placeholder="Enter Your Email Address">
+				<div class="required-row">
+					<label class="required-labels" id="number-label" for="age">Age: </label>
+					<input class="required-input" id="number" type="number" name="age" min="1" max="150" required placeholder="Enter Your Age">
+				</div>
 
-			<label class="labels" id="dropdown-label" for="dropdown">What is your Web Developer experience level?</label>
-			<select id="dropdown" name="dropdown">
-                <option></option>
-				<option>"What is Web Development?"</option>
-				<option>"I've Dipped My Toe In The Water."</option>
-				<option>"I Think I Know What I'm Doing..."</option>
-                <option>"I'm A Web Development Guru!"</option>
-			</select>
+				<div class="required-row">
+					<label class="required-labels" id="email-label" for="email">Email: </label>
+					<input class="required-input" id="email" type="email" name="email" required placeholder="Enter Your Email Address">
+				</div>
+			</fieldset>
 
-			<label class="labels" id="radio-label" for="radio-group">What was the first language you learned?</label>				
-			<div>
-				<label for="radio-html">HTML</label>
-				<input id="radio-html" value="radio-html" type="radio" name="radio-group">
-				<label for="radio-css">CSS</label>
-				<input id="radio-css" type="radio" name="radio-group">
-				<label for="radio-javascript">JavaScript</label>
-				<input id="radio-javascript" type="radio" name="radio-group">
-			</div>	
+			<fieldset id="experience">
+				<legend>About Your Experience</legend>
+				<div class="row">
+					<label class="labels" id="dropdown-label" for="dropdown">What is your experience level?</label>
+					<select id="dropdown" name="dropdown">
+						<option></option>
+						<option>"What is Web Development?"</option>
+						<option>"I've Dipped My Toe In The Water."</option>
+						<option>"I Think I Know What I'm Doing..."</option>
+						<option>"I'm A Web Development Guru!"</option>
+					</select>
+				</div>
 
-		    <label class="labels" id="textarea-label" for="textarea"> Additional Comments: </label>
-     		<textarea id="textarea" type="text" name="textarea" placeholder="Add your thoughts here..."></textarea>
-			
-			<button id="submit" type="submit">Submit</button>
+				<div class="row">
+					<label class="labels" for="radio-group">What was the first coding language you learned?</label>
+					
+					<div class="radio-item">
+						<input id="radio-html"  type="radio" name="radio-group">
+						<label for="radio-html">HTML</label>
+					</div>
+					<div class="radio-item">
+						<input id="radio-css" type="radio" name="radio-group">
+						<label for="radio-css">CSS</label>
+					</div>
+					<div class="radio-item">
+						<input id="radio-javascript" type="radio" name="radio-group">
+						<label for="radio-javascript">JavaScript</label>
+					</div>
+					<div class="radio-item">
+						<input id="radio-other" type="radio" name="radio-group">
+						<label for="radio-other">Other</label>
+					</div>
+				</div>
+
+				<div class="row">
+					<label class="labels" for="checkbox-group">What other concepts would you like to learn?</label>
+
+					<div class="checkbox-group" id="group1">
+						<div class="checkbox-item">
+							<input id="checkbox-html" type="checkbox" name="checkbox-group">
+							<label for="checkbox-html">HTML</label>
+						</div>
+						<div class="checkbox-item">
+							<input id="checkbox-css" type="checkbox" name="checkbox-group">
+							<label for="checkbox-css">CSS</label>
+						</div>
+						<div class="checkbox-item">
+							<input id="checkbox-javascrip" type="checkbox" name="checkbox-group">
+							<label for="checkbox-javascrip">JavaScript</label>
+						</div>
+						<div class="checkbox-item">
+							<input id="checkbox-react" type="checkbox" name="checkbox-group">
+							<label for="checkbox-react">React</label>
+						</div>
+					</div>
+
+					<div class="checkbox-group" id="group2">
+						<div class="checkbox-item">
+							<input id="checkbox-angular" type="checkbox" name="checkbox-group">
+							<label for="checkbox-angular">Angular</label>
+						</div>
+						<div class="checkbox-item">
+							<input id="checkbox-sass" type="checkbox" name="checkbox-group">
+							<label for="checkbox-sass">SASS</label>
+						</div>
+						<div class="checkbox-item">
+							<input id="checkbox-node" type="checkbox" name="checkbox-group">
+							<label for="checkbox-node">Node.js</label>
+						</div>
+						<div class="checkbox-item">
+							<input id="checkbox-bootstrap" type="checkbox" name="checkbox-group">
+							<label for="checkbox-bootstrap">Bootstrap</label>
+						</div>
+					</div>
+				</div>
+		
+		
+			</fieldset>
+
+			<fieldset id="additional-comments">
+				<legend>Additional Comments</legend>
+				<div class="row">
+					<textarea id="textarea" type="text" name="textarea" placeholder="Your thoughts here..."></textarea>
+				</div>
+				
+				<div class="row">
+					<button id="submit" type="submit">Submit</button>
+				</div>
+			</fieldset>
 		</form>
 
-		<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
 	</body>
 </html>

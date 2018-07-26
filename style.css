@@ -1,20 +1,61 @@
+html {
+    background-color: aliceblue;
+}
+
 body {
     text-align: center;
- }
+    width: 75%;
+    margin: auto;
+    min-width: 320px;
+}
  
- .labels {
-     display: block;
- }
+form {
+    background-color: floralwhite;
+    padding: 10px;
+}
+
+fieldset {
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.row, .required-row{
+    margin: 10px;
+}
+
+.checkbox-item, .radio-item, .required-labels {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
  
- .required-input {
-     width: 200px;
- }
+.required-input {
+    width: 200px;
+}
+
+.labels {
+    display: block;
+    margin: 10px;
+}
+
+.checkbox-group {
+    flex-wrap: wrap;
+}
+
+input::placeholder {
+    text-align: center;
+}
  
- input::placeholder {
-     text-align: center;
- }
- 
- button {
-     display: block;
-     margin: auto;
- }
+button {
+    display: block;
+    margin: auto;
+}
+
+#number-label {
+    padding-left: 11.55px;
+}
+
+@media (max-width: 520px){
+    .checkbox-item, .radio-item{
+        width: 45%;
+    }
+}
