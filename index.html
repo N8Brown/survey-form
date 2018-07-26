@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Survey</title>
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 		<link rel="stylesheet" href="style.css">
 	</head>
 
@@ -35,7 +36,7 @@
 
 			<fieldset id="experience">
 				<legend>About Your Experience</legend>
-				<div class="row">
+				<div class="row" id="dropdown-div">
 					<label class="labels" id="dropdown-label" for="dropdown">What is your experience level?</label>
 					<select id="dropdown" name="dropdown">
 						<option></option>
@@ -46,7 +47,7 @@
 					</select>
 				</div>
 
-				<div class="row">
+				<div class="row" id="radio-div">
 					<label class="labels" for="radio-group">What was the first coding language you learned?</label>
 					
 					<div class="radio-item">
@@ -67,61 +68,60 @@
 					</div>
 				</div>
 
-				<div class="row">
+				<div class="row" id="checkbox-div">
 					<label class="labels" for="checkbox-group">What other concepts would you like to learn?</label>
 
 					<div class="checkbox-group" id="group1">
 						<div class="checkbox-item">
 							<input id="checkbox-html" type="checkbox" name="checkbox-group">
-							<label for="checkbox-html">HTML</label>
+							<label class="checkbox-label" for="checkbox-html">HTML</label>
 						</div>
 						<div class="checkbox-item">
 							<input id="checkbox-css" type="checkbox" name="checkbox-group">
-							<label for="checkbox-css">CSS</label>
+							<label class="checkbox-label" for="checkbox-css">CSS</label>
 						</div>
 						<div class="checkbox-item">
 							<input id="checkbox-javascrip" type="checkbox" name="checkbox-group">
-							<label for="checkbox-javascrip">JavaScript</label>
+							<label class="checkbox-label" for="checkbox-javascrip">JavaScript</label>
 						</div>
 						<div class="checkbox-item">
 							<input id="checkbox-react" type="checkbox" name="checkbox-group">
-							<label for="checkbox-react">React</label>
+							<label class="checkbox-label" for="checkbox-react">React</label>
 						</div>
 					</div>
 
-					<div class="checkbox-group" id="group2">
+					<div class="checkbox-group" id="group2"> 
 						<div class="checkbox-item">
 							<input id="checkbox-angular" type="checkbox" name="checkbox-group">
-							<label for="checkbox-angular">Angular</label>
+							<label class="checkbox-label" for="checkbox-angular">Angular</label>
 						</div>
 						<div class="checkbox-item">
 							<input id="checkbox-sass" type="checkbox" name="checkbox-group">
-							<label for="checkbox-sass">SASS</label>
+							<label class="checkbox-label" for="checkbox-sass">SASS</label>
 						</div>
 						<div class="checkbox-item">
 							<input id="checkbox-node" type="checkbox" name="checkbox-group">
-							<label for="checkbox-node">Node.js</label>
+							<label class="checkbox-label" for="checkbox-node">Node.js</label>
 						</div>
 						<div class="checkbox-item">
 							<input id="checkbox-bootstrap" type="checkbox" name="checkbox-group">
-							<label for="checkbox-bootstrap">Bootstrap</label>
+							<label class="checkbox-label" for="checkbox-bootstrap">Bootstrap</label>
 						</div>
 					</div>
 				</div>
-		
-		
 			</fieldset>
 
 			<fieldset id="additional-comments">
 				<legend>Additional Comments</legend>
 				<div class="row">
-					<textarea id="textarea" type="text" name="textarea" placeholder="Your thoughts here..."></textarea>
-				</div>
-				
-				<div class="row">
-					<button id="submit" type="submit">Submit</button>
+					<textarea id="textarea" type="text" name="textarea" placeholder="Enter your thoughts here..."></textarea>
 				</div>
 			</fieldset>
+
+			<div class="row" id="submit-button">
+				<button id="submit" type="submit">Submit</button>
+			</div>
+
 		</form>
 
 	</body>

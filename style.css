@@ -3,20 +3,59 @@ html {
 }
 
 body {
+    color: #47658a;
     text-align: center;
     width: 75%;
     margin: auto;
+    max-width: 700px;
     min-width: 320px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
  
 form {
     background-color: floralwhite;
     padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #7d98b8
 }
 
 fieldset {
+    border-color: #7d98b8c4;
     border-radius: 10px;
     margin: 10px;
+}
+
+legend {
+    font-weight: bolder;
+}
+
+textarea {
+    height: 80px;
+    width: 300px;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    margin: auto;
+    width: 100px;
+    border-radius: 4px;
+    color: #47658a;
+    font-weight: bold;
+}
+
+textarea, button {
+    box-shadow: 2px 2px 2px #7d98b8
+}
+
+input::placeholder {
+    text-align: center;
 }
 
 .row, .required-row{
@@ -35,27 +74,35 @@ fieldset {
 .labels {
     display: block;
     margin: 10px;
+    font-weight: bold;
 }
 
 .checkbox-group {
     flex-wrap: wrap;
 }
 
-input::placeholder {
-    text-align: center;
+.checkbox-label {
+    width: 70px;
+    text-align: left;
 }
- 
-button {
-    display: block;
-    margin: auto;
+
+#experience, #additional-comments {
+    margin-top: 20px;
+}
+
+#radio-div, #checkbox-div, #submit-button {
+    margin-top: 20px;
 }
 
 #number-label {
     padding-left: 11.55px;
 }
 
-@media (max-width: 520px){
+@media (max-width: 600px){
     .checkbox-item, .radio-item{
         width: 45%;
+    }
+    textarea {
+        width: 200px;
     }
 }
