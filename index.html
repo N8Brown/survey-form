@@ -17,13 +17,13 @@
 		<form id="survey-form">
 			
 			<label class="labels" id="name-label" for="name">Name: </label>
-			<input id="name" type="text" name="name" required placeholder="Enter Your Name">
+			<input class="required-input" id="name" type="text" name="name" required placeholder="Enter Your Name">
 				
 			<label class="labels" id="number-label" for="age">Age: </label>
-			<input id="number" type="number" name="age" min="1" max="150" required placeholder="Enter Your Age">
+			<input class="required-input" id="number" type="number" name="age" min="1" max="150" required placeholder="Enter Your Age">
 			
 			<label class="labels" id="email-label" for="email">Email: </label>
-			<input id="email" type="email" name="email" required placeholder="Enter Your Email Address">
+			<input class="required-input" id="email" type="email" name="email" required placeholder="Enter Your Email Address">
 
 			<label class="labels" id="dropdown-label" for="dropdown">What is your Web Developer experience level?</label>
 			<select id="dropdown" name="dropdown">
@@ -34,11 +34,22 @@
                 <option>"I'm A Web Development Guru!"</option>
 			</select>
 
+			<label class="labels" id="radio-label" for="radio-group">What was the first language you learned?</label>				
+			<div>
+				<label for="radio-html">HTML</label>
+				<input id="radio-html" value="radio-html" type="radio" name="radio-group">
+				<label for="radio-css">CSS</label>
+				<input id="radio-css" type="radio" name="radio-group">
+				<label for="radio-javascript">JavaScript</label>
+				<input id="radio-javascript" type="radio" name="radio-group">
+			</div>	
+
 		    <label class="labels" id="textarea-label" for="textarea"> Additional Comments: </label>
      		<textarea id="textarea" type="text" name="textarea" placeholder="Add your thoughts here..."></textarea>
 			
 			<button id="submit" type="submit">Submit</button>
 		</form>
 
+		<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
 	</body>
 </html>

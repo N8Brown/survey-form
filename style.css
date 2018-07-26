@@ -6,7 +6,7 @@ body {
      display: block;
  }
  
- input {
+ .required-input {
      width: 200px;
  }
  
